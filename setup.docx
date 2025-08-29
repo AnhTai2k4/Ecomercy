@@ -1,0 +1,9 @@
+1. set up index.css
+body : margin, padding:0 ; box-sizing: border box
+2. Install
+- Ant design: npm i antd
+- redux tool kit( De lam gi biet sau): npm install @reduxjs/toolkit react-redux, quick start( Doc docx), 
+Bọc Provider thằng App trong main.jsjs --> Set state, middleware cac thu do
+- style-components : npm install styled-components
+- Taọ folder src/hooks-components-pages
+3. cấu hình router với react router dom
