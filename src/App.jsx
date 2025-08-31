@@ -1,32 +1,31 @@
-import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-import { decrement, increment } from './redux/slices/counterSlice'
-import styled from 'styled-components'
+import React, { Fragment } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import HeaderComponent from './components/HeaderComponent/HeaderComponent'
+import HomePage from './pages/HomePage/HomePage'
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage'
+import {routes} from './routes/index'
+import FooterComponent from './components/FooterComponent/FooterComponent'
 
-export default function Counter() {
-  const count = useSelector((state) => state.counter.value)
-  const dispatch = useDispatch()
-  const Button = styled.button`
-    background-color: red;
-  `
-
+// Main App Component
+export default function App() {
   return (
-    <div>
-      <div>
-        <Button
-          aria-label="Increment value"
-          onClick={() => dispatch(increment())}
-        >
-          Increment
-        </Button>
-        <span>{count}</span>
-        <Button
-          aria-label="Decrement value"
-          onClick={() => dispatch(decrement())}
-        >
-          Decrement
-        </Button>
-      </div>
-    </div>
+    <>
+      <Routes>
+        {
+          routes.map((route)=>{
+            const Layout= route.isShowHeader ? HeaderComponent: Fragment
+            return(< Route path= {route.path} element = {
+              <>
+              <Layout/>
+              <route.page/>
+              </>
+            
+          } />)
+          })
+        }
+      </Routes>
+    <FooterComponent/>
+
+    </>
   )
 }

@@ -7,3 +7,6 @@ Bọc Provider thằng App trong main.jsjs --> Set state, middleware cac thu do
 - style-components : npm install styled-components
 - Taọ folder src/hooks-components-pages
 3. cấu hình router với react router dom
+- Cấu hình các route trong main
+4. Các folder: components, pages,routes, hooks
+5. Tạo ảnh trượt slider bằng  npm install react-slick --save

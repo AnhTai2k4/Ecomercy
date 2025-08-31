@@ -1,0 +1,20 @@
+.TypeProduct__block{
+    height: 40;
+    width: 100%;
+    margin-bottom: 10px;
+    
+
+}
+.TypeProduct__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px 40px;
+    height: 100%;
+
+}
+.TypeProduct__card{
+    font-size: 15px;
+    color: rgb(62, 62, 255);
+
+}
