@@ -2,7 +2,7 @@ import React from 'react'
 
 const FooterComponent = () => {
   return (
-    <h1>
+    <h1 style={{position: "fixed", bottom: "0px"}}>
         FooterComponent
       
     </h1>
