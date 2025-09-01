@@ -2,8 +2,25 @@ import "./HeaderComponent.css";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
+import "../../pages/HomePage/HomePage.css"
 
 export default function HeaderComponent() {
+  const typeProduct = [
+    "Thịt, rau củ",
+    "Bách hóa",
+    "Nhà cửa",
+    "Điện tử",
+    " Thiết bị số",
+    "Điện thoại",
+    "Mẹ & bé",
+    "Làm đẹp",
+    "Gia dụng",
+    "Thời trang nữ",
+    "Thời trang nam",
+    "Giày nữ",
+    "Túi nữ",
+  ];
+  
   return (
     <>
       <div className="introduce__container">
@@ -68,6 +85,18 @@ export default function HeaderComponent() {
 
         <hr />
       </div>
+
+      <div className="TypeProduct__container">
+        {typeProduct.map((type) => {
+          return (
+            <>
+              <div class="TypeProduct__card">{type}</div>
+            </>
+          );
+        })}
+      </div>
+      <br />
+      <hr />
     </>
   );
 }

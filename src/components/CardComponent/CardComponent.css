@@ -2,11 +2,14 @@
     margin: 0px 60px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 60px
     
 }
 
 .product__card{
+    
     height: 350px;
     width: 180px;
     border-radius: 5%;
@@ -27,6 +30,7 @@
     border-style: hidden;
     font-size:medium;
     border-radius: 5%;
+    cursor: pointer;
     
 }
 .price__div--card{

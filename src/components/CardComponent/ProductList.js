@@ -36,4 +36,23 @@ export const productList = [
         star: "⭐⭐⭐",
         price: "20.000₫",
     },
+    {
+        image:"https://salt.tikicdn.com/cache/750x750/ts/product/c5/2d/9b/246d06f4ceee964a87ac4bcc2c6b3138.jpg.webp",
+        name:"48 Nguyên Tắc Chủ Chốt Của Quyền Lực",
+        star: "⭐⭐⭐",
+        price: "20.000₫",
+    },
+    {
+        image:"https://salt.tikicdn.com/cache/750x750/ts/product/c5/2d/9b/246d06f4ceee964a87ac4bcc2c6b3138.jpg.webp",
+        name:"48 Nguyên Tắc Chủ Chốt Của Quyền Lực",
+        star: "⭐⭐⭐",
+        price: "20.000₫",
+    },
+    {
+        image:"https://salt.tikicdn.com/cache/750x750/ts/product/c5/2d/9b/246d06f4ceee964a87ac4bcc2c6b3138.jpg.webp",
+        name:"48 Nguyên Tắc Chủ Chốt Của Quyền Lực",
+        star: "⭐⭐⭐",
+        price: "20.000₫",
+    },
+    
 ]

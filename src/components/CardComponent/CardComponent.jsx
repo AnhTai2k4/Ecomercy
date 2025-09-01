@@ -3,7 +3,10 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "./CardComponent.css";
 import { productList } from "./ProductList";
+import {useNavigate } from "react-router-dom";
+
 const CardComponent = () => {
+  const navigate = useNavigate()
   return (
     <div className="product__container">
       {productList.map((product) => {
@@ -20,7 +23,7 @@ const CardComponent = () => {
               </Card.Text>
               <div>{product.star}</div>
               <div className="price__div--card">{product.price}</div>
-              <Button variant="primary" className="buy__button">
+              <Button variant="primary" className="buy__button"  onClick={()=> navigate("/product-detail")}>
                 Mua ngay
               </Button>
             </Card.Body>
