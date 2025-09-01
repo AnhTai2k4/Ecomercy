@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import "./SliderComponent.css"
+import "./SliderComponent.css";
 
 const SliderComponent = ({ arrImg }) => {
   const settings = {
@@ -16,18 +16,20 @@ const SliderComponent = ({ arrImg }) => {
   };
   return (
     <div>
-      <div className="slider-container">
-        <Slider {...settings}>
-          {arrImg.map((Img) => {
-            return (
-              <>
-                <div>
-                  <img style={{height: "300px", width:"100%"}} src={Img} />
-                </div>
-              </>
-            );
-          })}
-        </Slider>
+      <div className="slider__block">
+        <div className="slider__container">
+          <Slider {...settings}>
+            {arrImg.map((Img) => {
+              return (
+                <>
+                  <div>
+                    <img style={{ height: "300px", width: "100%" }} src={Img} />
+                  </div>
+                </>
+              );
+            })}
+          </Slider>
+        </div>
       </div>
     </div>
   );
