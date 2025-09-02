@@ -11,7 +11,7 @@ export default function HomePage() {
     <div className="TypeProduct__block">
       
 
-     <SliderComponent arrImg= {["public/images/slider1.webp","public/images/slider2.webp","public/images/slider3.webp","public/images/slider4.webp","public/images/slider5.webp","public/images/slider6.webp",]} />   
+     <SliderComponent arrImg= {["/images/slider1.webp","/images/slider2.webp","/images/slider3.webp","/images/slider4.webp","/images/slider5.webp","/images/slider6.webp",]} />   
       
       <CardComponent/>
     </div>

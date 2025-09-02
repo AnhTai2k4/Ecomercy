@@ -3,8 +3,10 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import "../../pages/HomePage/HomePage.css"
+import { useNavigate } from "react-router-dom";
 
 export default function HeaderComponent() {
+  const navigate = useNavigate();
   const typeProduct = [
     "Thịt, rau củ",
     "Bách hóa",
@@ -38,6 +40,7 @@ export default function HeaderComponent() {
             className="img__logo--brand"
             src="https://salt.tikicdn.com/ts/upload/0e/07/78/ee828743c9afa9792cf20d75995e134e.png"
             alt="Anh logo"
+            onClick={()=>{navigate("/")}}
           />
           <div className="sreach__container"></div>
 
@@ -65,9 +68,9 @@ export default function HeaderComponent() {
               className="img__logo--account"
             />
             <span style={{ marginLeft: "10px" }}>
-              <a href="https://www.google.com">Đăng nhập</a>
+              <a href="/sign-in">Đăng nhập</a>
               <span style={{ fontSize: "18px" }}> / </span>
-              <a href="https://www.facebook.com">Đăng ký</a>
+              <a href="/sign-up">Đăng ký</a>
             </span>
           </div>
 
